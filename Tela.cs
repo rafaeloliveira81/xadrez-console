@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using tabuleiro;
 using xadrez;
 namespace xadrez_console
@@ -13,6 +12,10 @@ namespace xadrez_console
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+            if (partida.xeque)
+            {
+                Console.WriteLine("Xeque!");
+            }
 
         }
 
