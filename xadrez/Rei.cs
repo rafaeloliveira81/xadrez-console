@@ -23,7 +23,7 @@ namespace xadrez
         private bool testeTorreParaRoque(Posicao pos)
         {
             Peca p = tab.peca(pos);
-            return p.qteMovimentos == 0 && p.cor == cor && p != null && p is Torre;
+            return p != null && p.qteMovimentos == 0 && p.cor == cor && p is Torre;
         }
         public override bool[,] movimentosPossiveis()
         {
